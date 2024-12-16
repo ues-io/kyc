@@ -118,7 +118,7 @@ definition:
                             - uesio/io.box:
                                 components:
                                   - uesio/sitekit.section_testimonial:
-                                      quote: " This shows how banks and financial companies can develop apps with GenAI quickly, cheaply and securely."
+                                      quote: This shows how banks and financial companies can develop apps with GenAI quickly, cheaply and securely.
                                       name: "Ansuya Ahluwalia "
                                       title: CTO, Thirty3
                                       avatar: demo/kyc.ansuya
