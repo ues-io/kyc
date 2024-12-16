@@ -1,0 +1,20 @@
+name: public
+named: {}
+views:
+  demo/kyc.footer: true
+  demo/kyc.header: true
+  demo/kyc.home: true
+collections: {}
+routes:
+  demo/kyc.home: true
+files: {}
+bots: {}
+integrationActions: {}
+allowallbots: false
+allowallcollections: false
+allowallviews: false
+allowallroutes: false
+allowallfiles: true
+allowallintegrationactions: false
+modifyallrecords: false
+viewallrecords: false

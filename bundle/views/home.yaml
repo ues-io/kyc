@@ -1,0 +1,113 @@
+name: home
+definition:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: demo/kyc.page
+        header:
+          - uesio/core.view:
+              view: demo/kyc.header
+        content:
+          - uesio/sitekit.section_hero:
+              title: "Streamline Your KYC Process with AI-Powered Insights"
+              subtitle: "Unlock the power of comprehensive customer profiles for smarter financial decisions."
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.primary_dark
+                    text: Learn more
+                    signals:
+                      - signal: route/REDIRECT
+                        newtab: true
+                        path: https://ues.io/demo
+          - uesio/io.box:
+              components:
+                - uesio/sitekit.section_feature:
+                    title: AI-Powered Finance Application Processing
+                    subtitle: Streamline Your Workflow
+                    description: Our advanced AI algorithms analyze financial data and documents to automate key steps in the application review process, saving your team time and improving accuracy.
+                - uesio/sitekit.section_feature:
+                    title: Comprehensive Customer Profiles
+                    subtitle: Get to Know Your Customers
+                    description: Gain deeper insights into your customers with our robust KYC (Know Your Customer) tools that compile detailed profiles, helping you make more informed decisions.
+                - uesio/sitekit.section_feature:
+                    title: Secure and Compliant
+                    subtitle: Trust and Reliability
+                    description: Rest assured that your customer data is protected with our industry-leading security measures and compliance with all relevant financial regulations.
+          - uesio/sitekit.section_testimonial:
+              quote: The AI pwoered KYC is the missing piece we didn't know we needed. It's streamlined our operations and helped us make smarter, more informed decisions.
+              name: Sarah Lee
+              title: Chief Operating Officer, Delta Wealth Management
+              avatar: uesio/sitekit.avatarpics
+              avatarPath: images/connie_forrester.jpg
+              stars: 5
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content_three_column
+              uesio.styleTokens:
+                root:
+                  - bg-white/80
+              content:
+                - uesio/sitekit.testimonial:
+                    quote: The KYC app has transformed our application review process. The AI-driven insights have saved us countless hours and improved our accuracy tenfold.
+                    name: John Rhone
+                    title: Head of Compliance, Acme Bank
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/josie_malkovic.jpg
+                - uesio/sitekit.testimonial:
+                    quote: With AI powered KYC, we're able to get to know our customers on a deeper level. The platform's robust profiling tools are a game-changer.
+                    name: Jane Smith
+                    title: Chief Risk Officer, Apex Financial
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/connie_forrester.jpg
+                - uesio/sitekit.testimonial:
+                    quote: Compliance has never been easier. KYC with AI secure and compliant platform gives us peace of mind that we're operating within all relevant regulations.
+                    name: Michael Johnson
+                    title: CEO, Horizon Investments
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/josie_malkovic.jpg
+        footer:
+          - uesio/core.view:
+              view: demo/kyc.footer
+  panels:
+    panel43:
+      uesio.type: uesio/io.dialog
+      components:
+        - uesio/io.box:
+            components:
+              - uesio/io.list:
+                  mode: EDIT
+                  wire: consent
+                  components:
+                    - uesio/io.text:
+                        text: We use cookies to track our traffic. We do not store your personal data or sell any of this to anyone else. You can consent to the use of cookies by closing this notice or by clicking on the consent toggle or by interacting with anything outside of this notice or by continuing to browse otherwise.
+                        element: div
+                        align: center
+                    - uesio/io.field:
+                        fieldId: consent
+                        readonly: false
+                        displayAs: TOGGLE
+            uesio.variant: uesio/sitekit.hero_wrapper
+      width: 40%
+      height: 40%
+      title: Cookies
+      uesio.variant: uesio/io.default
+      closeOnOutsideClick: true
+  wires:
+    consent:
+      viewOnly: true
+      fields:
+        consent:
+          type: CHECKBOX
+          label: Consent
+      init:
+        query: false
+        create: true
+      events:
+        - type: onLoadSuccess
+          signals:
+            - signal: panel/OPEN
+              panel: panel43
+        - type: onChange
+          fields:
+            - consent
+          signals:
+            - signal: panel/CLOSE
+              panel: panel43
