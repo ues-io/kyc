@@ -89,12 +89,14 @@ definition:
                                 align: left
                                 color: ""
                             - uesio/io.text:
+                                text: • Connect to existing systems of record with REST API.
                                 uesio.variant: uesio/sitekit.hero_subtitle
                                 color: ""
                                 element: div
                                 align: left
                                 uesio.styleTokens:
                                   root:
+                                    - pt-4
                             - uesio/io.text:
                                 text: • Use a private AI LLM to query and confirm documentation and authenticity.
                                 uesio.variant: uesio/sitekit.hero_subtitle
