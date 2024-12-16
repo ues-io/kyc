@@ -157,3 +157,4 @@ definition:
             - mt-8
     - uesio/core.view:
         view: demo/kyc.footer
+
