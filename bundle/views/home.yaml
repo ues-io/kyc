@@ -89,6 +89,7 @@ definition:
                                 align: left
                                 color: ""
                             - uesio/io.text:
+                                text: • Connect to existing systems of record with REST API.
                                 uesio.variant: uesio/sitekit.hero_subtitle
                                 color: ""
                                 element: div
