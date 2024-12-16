@@ -96,7 +96,7 @@ definition:
                                 align: left
                                 uesio.styleTokens:
                                   root:
-                                    - pt-4
+                                    - pt-6
                             - uesio/io.text:
                                 text: • Use a private AI LLM to query and confirm documentation and authenticity.
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -104,7 +104,8 @@ definition:
                                 element: div
                                 align: left
                                 uesio.styleTokens:
-                                  root: []
+                                  root:
+                                    - pt-4
                             - uesio/io.text:
                                 text: • Use GenBots and AI to create workflows to reduce time and increase accuracy.
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -112,7 +113,15 @@ definition:
                                 element: div
                                 align: left
                                 uesio.styleTokens:
-                                  root: []
+                                  root:
+                                    - pt-4
+                            - uesio/io.box:
+                                components:
+                                  - uesio/sitekit.section_testimonial:
+                                      quote: " This shows how banks and financial companies can develop apps with GenAI quickly, cheaply and securely."
+                                      name: "Ansuya Ahluwalia "
+                                      title: CTO, Thirty3
+                                      avatar: demo/kyc.ansuya
                     swap: true
                     leftBackground: sky-200
                     rightBackground: sky-300
