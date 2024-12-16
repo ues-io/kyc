@@ -170,6 +170,7 @@ definition:
             - z-10
             - top-0
             - bg-white
-            - mt-8
+          root:
+            - mt-2
     - uesio/core.view:
         view: demo/kyc.footer
