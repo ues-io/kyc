@@ -96,6 +96,7 @@ definition:
                                 align: left
                                 uesio.styleTokens:
                                   root:
+                                    - pt-4
                             - uesio/io.text:
                                 text: • Use a private AI LLM to query and confirm documentation and authenticity.
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -169,6 +170,7 @@ definition:
             - z-10
             - top-0
             - bg-white
-            - mt-8
+          root:
+            - mt-2
     - uesio/core.view:
         view: demo/kyc.footer
