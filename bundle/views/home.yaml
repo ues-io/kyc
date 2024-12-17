@@ -45,11 +45,29 @@ definition:
                                             uesio.variant: ""
                                         - uesio/io.button:
                                             uesio.variant: uesio/sitekit.primary_nofill
+                                            text: WATCH LIVE
+                                            signals:
+                                              - signal: route/REDIRECT
+                                                path: https://youtu.be/l0evKBknlIY
+                                                newtab: true
+                                            uesio.styleTokens:
+                                              root:
+                                                - m-4
+                                                - hover:bg-white
+                                              label:
+                                                - hover:text-black
+                                        - uesio/io.button:
+                                            uesio.variant: uesio/sitekit.primary_nofill
                                             text: BOOK A DEMO
                                             signals:
                                               - signal: route/REDIRECT
                                                 path: https://meetings.hubspot.com/mark2527
                                                 newtab: true
+                                            uesio.styleTokens:
+                                              root:
+                                                - hover:bg-white
+                                              label:
+                                                - hover:text-black
                                         - uesio/io.text:
                                             text: Apps are an excellent way for financial institutions to advance banking with AI and GenAI. Financial institutions  can develop apps with GenAI quickly, cheaply and securely.  Thanks to templates, AI support and simple workflows, the entire process from conception to production is possible in just a few hours.
                                             element: div
@@ -76,100 +94,100 @@ definition:
                                         root:
                                           - scale-[1.9]
                                           - md:translate-x-1/4
+              uesio.variant: uesio/sitekit.section
+          - uesio/io.box:
+              uesio.variant: ""
+              components:
                 - uesio/io.box:
                     uesio.variant: ""
                     components:
-                      - uesio/io.box:
-                          uesio.variant: ""
-                          components:
-                            - uesio/io.text:
-                                uesio.variant: uesio/sitekit.hero_title
-                                text: Straightforward KYC backed by the powerful ues.io platform.
-                                element: div
-                                align: left
-                                color: ""
-                            - uesio/io.text:
-                                text: • Connect to existing systems of record with REST API.
-                                uesio.variant: uesio/sitekit.hero_subtitle
-                                color: ""
-                                element: div
-                                align: left
-                                uesio.styleTokens:
-                                  root:
-                                    - pt-6
-                            - uesio/io.text:
-                                text: • Use a private AI LLM to query and confirm documentation and authenticity.
-                                uesio.variant: uesio/sitekit.hero_subtitle
-                                color: ""
-                                element: div
-                                align: left
-                                uesio.styleTokens:
-                                  root:
-                                    - pt-4
-                            - uesio/io.text:
-                                text: • Use GenBots and AI to create workflows to reduce time and increase accuracy.
-                                uesio.variant: uesio/sitekit.hero_subtitle
-                                color: ""
-                                element: div
-                                align: left
-                                uesio.styleTokens:
-                                  root:
-                                    - pt-4
-                            - uesio/io.box:
-                                components:
-                                  - uesio/sitekit.section_testimonial:
-                                      quote: This shows how banks and financial companies can develop apps with GenAI quickly, cheaply and securely.
-                                      name: "Ansuya Ahluwalia "
-                                      title: CTO, Thirty3
-                                      avatar: demo/kyc.ansuya
-                    swap: true
-                    leftBackground: sky-200
-                    rightBackground: sky-300
-                    right:
-                      - uesio/io.image:
-                          file: uesio/crmsite.mockup_opp_details
-                          uesio.variant: uesio/crmsite.splithero
+                      - uesio/io.text:
+                          uesio.variant: uesio/sitekit.hero_title
+                          text: Straightforward KYC backed by the powerful ues.io platform.
+                          element: div
+                          align: left
+                          color: ""
+                      - uesio/io.text:
+                          text: • Connect to existing systems of record with REST API.
+                          uesio.variant: uesio/sitekit.hero_subtitle
+                          color: ""
+                          element: div
+                          align: left
                           uesio.styleTokens:
                             root:
-                              - md:-translate-x-1/3
-                    left:
-                      - uesio/io.box:
-                          uesio.variant: uesio/crmsite.textsection
+                              - pt-6
+                      - uesio/io.text:
+                          text: • Use a private AI LLM to query and confirm documentation and authenticity.
+                          uesio.variant: uesio/sitekit.hero_subtitle
+                          color: ""
+                          element: div
+                          align: left
                           uesio.styleTokens:
                             root:
-                              - ml-0
+                              - pt-4
+                      - uesio/io.text:
+                          text: • Use GenBots and AI to create workflows to reduce time and increase accuracy.
+                          uesio.variant: uesio/sitekit.hero_subtitle
+                          color: ""
+                          element: div
+                          align: left
+                          uesio.styleTokens:
+                            root:
+                              - pt-4
+                      - uesio/io.box:
                           components:
-                            - uesio/io.text:
-                                uesio.variant: uesio/crmsite.subheader
-                                uesio.styleTokens:
-                                  root:
-                                    - text-sky-500
-                                text: Opportunities
-                                element: div
-                            - uesio/io.text:
-                                uesio.variant: uesio/crmsite.halfhero
-                                text: Track deals from start to closed.
-                            - uesio/io.text:
-                                uesio.variant: uesio/crmsite.herosubtext
-                                text: Struggling to keep tabs on your sales pipeline? Close deals faster. ues.io CRM tracks every step of the sales journey, from initial contact to closed deals.  Stop juggling spreadsheets and focus on closing deals.
-                                uesio.styleTokens:
-                                  root:
-                                    - text-sky-700
-                            - uesio/io.box:
-                                components:
-                                  - uesio/io.button:
-                                      text: Get Started for Free
-                                      uesio.variant: uesio/sitekit.primary_dark
-                                      signals:
-                                        - signal: route/NAVIGATE
-                                          path: getstarted
+                            - uesio/sitekit.section_testimonial:
+                                quote: This shows how banks and financial companies can develop apps with GenAI quickly, cheaply and securely.
+                                name: "Ansuya Ahluwalia "
+                                title: CTO, Thirty3
+                                avatar: demo/kyc.ansuya
+              swap: true
+              leftBackground: sky-200
+              rightBackground: sky-300
+              right:
+                - uesio/io.image:
+                    file: uesio/crmsite.mockup_opp_details
+                    uesio.variant: uesio/crmsite.splithero
                     uesio.styleTokens:
                       root:
-                        - bg-white
-                        - p-10
-                        - flex
-                        - w-screen
-              uesio.variant: uesio/sitekit.section
+                        - md:-translate-x-1/3
+              left:
+                - uesio/io.box:
+                    uesio.variant: uesio/crmsite.textsection
+                    uesio.styleTokens:
+                      root:
+                        - ml-0
+                    components:
+                      - uesio/io.text:
+                          uesio.variant: uesio/crmsite.subheader
+                          uesio.styleTokens:
+                            root:
+                              - text-sky-500
+                          text: Opportunities
+                          element: div
+                      - uesio/io.text:
+                          uesio.variant: uesio/crmsite.halfhero
+                          text: Track deals from start to closed.
+                      - uesio/io.text:
+                          uesio.variant: uesio/crmsite.herosubtext
+                          text: Struggling to keep tabs on your sales pipeline? Close deals faster. ues.io CRM tracks every step of the sales journey, from initial contact to closed deals.  Stop juggling spreadsheets and focus on closing deals.
+                          uesio.styleTokens:
+                            root:
+                              - text-sky-700
+                      - uesio/io.box:
+                          components:
+                            - uesio/io.button:
+                                text: Get Started for Free
+                                uesio.variant: uesio/sitekit.primary_dark
+                                signals:
+                                  - signal: route/NAVIGATE
+                                    path: getstarted
+              uesio.styleTokens:
+                root:
+                  - bg-white
+                  - p-10
+                  - flex
+                  - w-screen
         header:
           - uesio/core.view:
               view: demo/kyc.header
@@ -179,7 +197,6 @@ definition:
             - z-10
             - top-0
             - bg-white
-          root:
-            - mt-2
+          root: []
     - uesio/core.view:
         view: demo/kyc.footer
