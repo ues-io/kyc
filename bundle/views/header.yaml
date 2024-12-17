@@ -18,13 +18,18 @@ definition:
                       - uesio/io.image:
                           file: uesio/core.logowhite
                           filepath: ""
-                          signals: []
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://ues.io
+                              newtab: true
                           uesio.styleTokens:
                             root: []
                           height: 44
                           width: 34
                           loading: eager
                           uesio.variant: ""
+                    uesio.styleTokens:
+                      root: []
               right:
                 - uesio/io.box:
                     components:
@@ -100,3 +105,5 @@ definition:
                           columnGap: "2"
                           uesio.styleTokens:
                             root: []
+                    uesio.styleTokens:
+                      root: []
