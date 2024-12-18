@@ -141,6 +141,10 @@ definition:
                                 name: "Ansuya Ahluwalia "
                                 title: CTO, Thirty3
                                 avatar: demo/kyc.ansuya
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://www.linkedin.com/in/ansuyaahluwalia/
+                              newtab: true
               swap: true
               leftBackground: sky-200
               rightBackground: sky-300
